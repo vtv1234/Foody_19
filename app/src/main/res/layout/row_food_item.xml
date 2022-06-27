@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+
+    <ImageView
+        android:id="@+id/rowFoodItem_image_food"
+        android:layout_width="0dp"
+        android:layout_height="145dp"
+        android:layout_weight="4"
+        android:src="@drawable/example_image_shop"
+        android:contentDescription="TODO" />
+
+    <LinearLayout
+        android:id="@+id/rowFoodItem_layout_detail"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6">
+
+        <TextView
+            android:id="@+id/rowFoodItem_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Tên món ăn"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/rowFoodItem_text_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Mô tả"
+            android:textColor="@color/light_color"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/rowFoodItem_layout_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/rowFoodItem_text_sold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="... đã bán"
+                android:textColor="@color/light_color"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/rowFoodItem_text_liked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".. đã thích"
+                android:textColor="@color/light_color"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowFoodItem_layout_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/rowFoodItem_text_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:layout_gravity="center"
+                android:text="... đ"
+                android:textColor="#FF5722"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/rowFoodItem_image_order"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/image_add_order" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
